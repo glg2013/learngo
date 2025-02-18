@@ -1,8 +1,10 @@
 package main
 
+import "fmt"
+
 /**
-  对应 Go语言基础02 变量与常量
-  常量
+对应 Go语言基础02 变量与常量
+常量
 */
 
 // 常量
@@ -53,13 +55,13 @@ const (
 
 func main() {
 	// 打印常量
-	println(pi, e, x, y)
+	fmt.Println(pi, e, x, y)
 
-	println(n1, n2, n3, n4, n5)
+	fmt.Println(n1, n2, n3, n4, n5)
 
-	println(m1, m2, m3)
+	fmt.Println(m1, m2, m3)
 
-	println(u1, u2, u3, u4, u5)
+	fmt.Println(u1, u2, u3, u4, u5)
 
-	println(a99, b99, c99, d99, e99, f99)
+	fmt.Println(a99, b99, c99, d99, e99, f99)
 }
