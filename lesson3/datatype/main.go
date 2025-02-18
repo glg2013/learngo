@@ -27,13 +27,13 @@ func main() {
 	fmt.Println(f)
 	fmt.Printf("%x\n", f)
 
-	// unit8
+	// uint8
 	var age uint8 = 255
 	fmt.Println(age)
 
 	// 浮点数
 	fmt.Println(math.MaxFloat32)
-	fmt.Println()
+	fmt.Println(math.MaxFloat64)
 
 	// 布尔值
 	var a bool

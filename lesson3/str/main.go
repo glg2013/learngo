@@ -14,20 +14,20 @@ import (
 
 func main() {
 
-	//// 常见字符串操作
-	//var s string = "hello"
-	//var s2 string = "hello小宇宙"
-	//fmt.Println(len(s), len(s2))
-	//
-	//// 拼接字符串
-	//fmt.Println(s + s2)
-	//var s3 string = fmt.Sprintf("%s - %s", s, s2)
-	//fmt.Println(s3)
+	// 常见字符串操作
+	var s string = "hello"
+	var s2 string = "hello小宇宙"
+	fmt.Println(len(s), len(s2))
+
+	// 拼接字符串
+	fmt.Println(s + s2)
+	var s3 string = fmt.Sprintf("%s - %s", s, s2)
+	fmt.Println(s3)
 
 	// 字符串的分割
 	var s4 string = "how do you do"
 	fmt.Println(strings.Split(s4, " "))
-	fmt.Printf("%T\n", strings.Split(s4, "\n"))
+	fmt.Printf("%T\n", strings.Split(s4, " "))
 
 	// 判断是否包含
 	fmt.Println(strings.Contains(s4, "do"))
@@ -43,7 +43,7 @@ func main() {
 	fmt.Println(strings.LastIndex(s4, "do"))
 	// join 连接
 	// 这个是使用了 var 的形式，定义并赋值
-	var s5 = []string{"how", "do", "you", "do"}
+	var s5 []string = []string{"how", "do", "you", "do"}
 	fmt.Println(s5)
 	fmt.Println(strings.Join(s5, "+"))
 
@@ -59,9 +59,16 @@ func main() {
 	fmt.Printf("c1 %T  c2 %T\n", c1, c2)
 
 	// 遍历查询字符串的每个字符
+	// 普通的遍历，如果是有多字节编码的字符串，就会出现乱码
+	s7 := "老子打的就是精锐！"
+	s7Len := len(s7)
+	for i := 0; i < s7Len; i++ {
+		fmt.Printf("%c\n", s7[i])
+	}
+
 	// 处理中英文混合的
-	var s7 string = "hello小宇宙"
-	for _, i2 := range s7 {
+	var s8 string = "hello小宇宙"
+	for _, i2 := range s8 {
 		fmt.Printf("%c\n", i2)
 	}
 
