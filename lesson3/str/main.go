@@ -72,4 +72,17 @@ func main() {
 		fmt.Printf("%c\n", i2)
 	}
 
+	s1 := "big"
+	// 强制类型转换
+	byteS1 := []byte(s1)
+	fmt.Printf("%T\n", byteS1)
+	fmt.Println(byteS1)
+	byteS1[0] = 'p'
+	fmt.Println(string(byteS1))
+
+	s9 := "白萝卜"
+	runeS2 := []rune(s9)
+	runeS2[0] = '红'
+	fmt.Println(string(runeS2))
+
 }

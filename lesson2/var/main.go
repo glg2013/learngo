@@ -48,4 +48,17 @@ func main() {
 	// 6.简短声明
 	m := 10
 	fmt.Println("6.", m)
+
+	p := 0b1101 // 零b 开头
+	fmt.Printf("%T\n", p)
+
+	v := 0o377 // 零欧 开头
+	fmt.Printf("%T\n", v)
+
+	var c1 complex64
+	c1 = 1 + 2i
+	var c2 complex128
+	c2 = 2 + 3i
+	fmt.Println(c1)
+	fmt.Println(c2)
 }
