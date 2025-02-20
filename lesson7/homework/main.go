@@ -21,11 +21,11 @@ func main() {
 
 func main() {
 	// 1.解答
-	//answer()
+	answer()
 
 	// 2.解答
-	var a = [...]int{3, 7, 8, 9, 1}
-	sortList(a)
+	//var a = [...]int{3, 7, 8, 9, 1}
+	//sortList(a)
 }
 
 func answer() {

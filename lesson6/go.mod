@@ -1,3 +1,3 @@
-module lesson6
+module lesson6_array
 
 go 1.24.0
