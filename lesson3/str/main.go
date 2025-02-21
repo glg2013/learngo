@@ -69,7 +69,8 @@ func main() {
 	// 处理中英文混合的
 	var s8 string = "hello小宇宙"
 	for _, i2 := range s8 {
-		fmt.Printf("%c\n", i2)
+		// 单个字符就是 阿斯克码的 int 类型了
+		fmt.Printf("%T\n, %c\n", i2, i2)
 	}
 
 	s1 := "big"
