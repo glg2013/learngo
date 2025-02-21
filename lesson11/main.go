@@ -10,5 +10,12 @@ func main() {
 	a := 10
 	b := &a
 	fmt.Println(a, b, &*b, *b)
-	fmt.Printf("%T\n", b)
+	fmt.Printf("%T\n", &a)
+
+	//a := &[]string{}
+	//fmt.Printf("%T\n", a)
+
+	//var a *int
+	//fmt.Printf("%#v\n", a)
+
 }
