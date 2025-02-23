@@ -39,4 +39,5 @@ func main() {
 	user3.city = "北京"
 	user3.age = 18
 	fmt.Printf("user3: %#v\n", user3)
+
 }
