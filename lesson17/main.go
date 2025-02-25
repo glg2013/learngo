@@ -37,6 +37,9 @@ func main() {
 		showMenu()
 		// 2.获取用户的选择
 		var choice int
+		// 2025年2月25日14:08:27  这里问了下 deepseek，解惑了
+		// 在 Go 语言中，fmt.Scanf 是一个阻塞操作。当你在 for 循环中使用 fmt.Scanf 时，程序会停在那里等待用户输入，
+		// 直到用户输入了数据并按下回车键后，程序才会继续执行循环的下一次迭代。
 		fmt.Scanf("%d\n", &choice)
 		switch choice {
 		case 1:
